@@ -1,0 +1,12 @@
+appname: hello-world
+
+build:
+    base: golang:1.8
+    script:
+        - go build -o hello-world
+
+    proc.web:
+        type: web
+        cmd: /lain/app/hello-world
+        port: 8080
+
