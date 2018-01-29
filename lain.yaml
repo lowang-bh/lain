@@ -5,8 +5,8 @@ build:
     script:
         - go build -o hello-world
 
-    proc.web:
-        type: web
-        cmd: /lain/app/hello-world
-        port: 8080
+proc.web:
+    type: web
+    cmd: /lain/app/hello-world
+    port: 8080
 
